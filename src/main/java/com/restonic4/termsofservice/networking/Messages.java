@@ -8,8 +8,8 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.resources.ResourceLocation;
 
 public class Messages  {
-    public static final ResourceLocation TO_PLAYER = new ResourceLocation(TermsOfService.ID, "toPlayer");
-    public static final ResourceLocation TO_SERVER = new ResourceLocation(TermsOfService.ID, "toServer");
+    public static final ResourceLocation TO_PLAYER = new ResourceLocation(TermsOfService.ID, "to_player");
+    public static final ResourceLocation TO_SERVER = new ResourceLocation(TermsOfService.ID, "to_server");
 
     public static void registerServerToClientPackets() {
         ClientPlayNetworking.registerGlobalReceiver(TO_PLAYER, ToPlayerMessage::receive);
